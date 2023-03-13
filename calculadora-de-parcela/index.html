@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de parcelas</title>
+</head>
+
+<body>
+    <div class="calc-1">
+        <form>
+            <label for="valor">Valor do carro:</label><br>
+            <input type="number" id="valor" name="valor" min="0" required><br><br>
+
+            <label for="prestacao">Valor da prestação:</label><br>
+            <input type="number" id="prestacao" name="prestacao" min="0" step="1" required><br><br>
+
+            <label for="entrada">Valor da entrada:</label><br>
+            <input type="number" id="entrada" name="entrada" min="0" step="1" required><br><br>
+
+            <input id="cal" type="button" value="Calcular" onclick="calcularPrestacoes()"><br><br>
+
+            <label for="resultado">Número de prestações:</label><br>
+            <input type="text" id="resultado" name="resultado" readonly><br><br>
+        </form>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
